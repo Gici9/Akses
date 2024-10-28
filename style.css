@@ -1,7 +1,8 @@
-/* Style untuk halaman pertama dan kedua */
+/* Style dasar */
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,7 +11,6 @@ body {
     overflow: hidden;
 }
 
-/* Transisi keren untuk halaman pertama dan kedua */
 .container {
     text-align: center;
     background-color: white;
@@ -18,13 +18,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.container.show {
+.show-page {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 .logo {
@@ -69,7 +69,6 @@ p {
     color: #666;
 }
 
-/* Style untuk waktu di halaman kedua */
 .time-box {
     display: inline-block;
     padding: 10px 20px;
@@ -80,50 +79,23 @@ p {
     font-size: 1.2em;
 }
 
-/* Style untuk modal (alert custom) */
-.modal {
+/* Footer */
+footer {
     position: fixed;
-    top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.modal-logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.modal p {
-    font-size: 1.1em;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-}
-
-#modalButton {
-    font-family: 'Arial', sans-serif;
     background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
+    text-align: center;
+    padding: 10px 0;
 }
 
-#modalButton:hover {
-    background-color: darkorange;
+.social-icon {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
