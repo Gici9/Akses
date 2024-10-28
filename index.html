@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STIE GICI Business School Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="try.css">
 </head>
 <body>
 
@@ -21,20 +21,30 @@
     <div id="page2" class="container" style="display:none;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1j1sybEQkKmgOmkMPwe4IHtjCE513YxOzg&usqp=CAU" alt="Logo" class="logo">
         <h1>Selamat datang, <span id="namaUser"></span>!</h1>
-        <p>Mohon tunggu sampai waktu yang ditentukan</p>
+        <p>Mohon tunggu sampai waktu yang telah ditentukan</p>
         <div class="time-box" id="countdownTime"></div>
     </div>
 
-    <!-- Modal untuk alert -->
-    <div id="customAlert" class="modal" style="display:none;">
-        <div class="modal-content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1j1sybEQkKmgOmkMPwe4IHtjCE513YxOzg&usqp=CAU" alt="GICI Logo" class="modal-logo">
-            <p id="alertMessage"></p>
-            <button id="modalButton">Oke</button>
-        </div>
+    <!-- Halaman ketiga (redirect) -->
+    <div id="page3" class="container" style="display:none;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1j1sybEQkKmgOmkMPwe4IHtjCE513YxOzg&usqp=CAU" alt="Logo" class="logo">
+        <p>Mohon untuk masuk ke dalam link</p>
+        <button onclick="redirect()">Masuk</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Footer dengan link sosial media -->
+    <footer>
+        <a href="https://youtube.com/@officialstiegici?si=t1sqTk4AJT3lbdLa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/gici.bekasi?igsh=bHNvZW1udm5xNG9s" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/share/pVHuCYvBK1A7tDxd/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+        </a>
+    </footer>
 
+    <script src="try.js"></script>
 </body>
 </html>
