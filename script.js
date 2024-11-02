@@ -46,7 +46,7 @@ function submitForm() {
 // Fungsi untuk hitung mundur
 function countdown() {
     const targetTime = new Date();
-    targetTime.setHours(9, 49, 0, 0); // Sesuaikan waktu
+    targetTime.setHours(9, 5, 0, 0); // Sesuaikan waktu
 
     const interval = setInterval(() => {
         const now = new Date();
